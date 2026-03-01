@@ -68,14 +68,14 @@ export default function Home() {
   );
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#0A0A0A] p-4">
-      {/* iPhone Frame */}
-      <div className="relative w-[375px] h-[812px] rounded-[50px] border-[3px] border-[#2A2A2A] bg-[#1A0A14] overflow-hidden shadow-[0_0_80px_rgba(107,29,74,0.3)]">
-        {/* Dynamic Island */}
-        <div className="absolute top-[10px] left-1/2 -translate-x-1/2 w-[126px] h-[37px] bg-black rounded-full z-50" />
+    <div className="min-h-[100dvh] flex items-center justify-center bg-[#0A0A0A] p-0 md:p-4">
+      {/* iPhone Frame — full-screen on mobile, framed on desktop */}
+      <div className="relative w-full h-[100dvh] md:w-[375px] md:h-[812px] md:rounded-[50px] md:border-[3px] md:border-[#2A2A2A] bg-[#1A0A14] overflow-hidden md:shadow-[0_0_80px_rgba(107,29,74,0.3)]">
+        {/* Dynamic Island — hidden on mobile (real phone has one) */}
+        <div className="hidden md:block absolute top-[10px] left-1/2 -translate-x-1/2 w-[126px] h-[37px] bg-black rounded-full z-50" />
 
-        {/* Status Bar */}
-        <div className="absolute top-[12px] left-0 right-0 h-[34px] z-40 flex items-center justify-between px-8">
+        {/* Status Bar — hidden on mobile (real phone has one) */}
+        <div className="hidden md:flex absolute top-[12px] left-0 right-0 h-[34px] z-40 items-center justify-between px-8">
           <span className="text-[13px] font-semibold text-[#FFF8F3]/80" style={{ fontFamily: "var(--font-dm-sans)" }}>9:41</span>
           <div className="flex items-center gap-[5px]">
             <svg width="18" height="12" viewBox="0 0 18 12" fill="none">
@@ -147,8 +147,8 @@ export default function Home() {
           </AnimatePresence>
         </div>
 
-        {/* Home Indicator */}
-        <div className="absolute bottom-[8px] left-1/2 -translate-x-1/2 w-[134px] h-[5px] bg-[#FFF8F3]/20 rounded-full z-50" />
+        {/* Home Indicator — hidden on mobile */}
+        <div className="hidden md:block absolute bottom-[8px] left-1/2 -translate-x-1/2 w-[134px] h-[5px] bg-[#FFF8F3]/20 rounded-full z-50" />
       </div>
     </div>
   );
