@@ -17,7 +17,7 @@ export default function WelcomeScreen({ onNext }: WelcomeScreenProps) {
       <div className="absolute top-[50%] left-[30%] w-[200px] h-[200px] rounded-full bg-[#8A2E5E]/30 blur-[90px] animate-pulse-warm" style={{ animationDelay: "0.7s" }} />
 
       {/* Top spacer for status bar */}
-      <div className="h-[100px]" />
+      <div className="h-[16px] md:h-[100px]" />
 
       {/* Logo & Tagline */}
       <motion.div
@@ -125,7 +125,7 @@ export default function WelcomeScreen({ onNext }: WelcomeScreenProps) {
       </motion.div>
 
       {/* Bottom safe area */}
-      <div className="h-[30px]" />
+      <div className="h-[12px] md:h-[30px]" />
     </div>
   );
 }

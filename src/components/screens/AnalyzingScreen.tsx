@@ -57,7 +57,7 @@ export default function AnalyzingScreen({ onNext }: AnalyzingScreenProps) {
 
       {/* Heartbeat ring animation */}
       <motion.div
-        className="relative mb-12"
+        className="relative mb-6 md:mb-12"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}

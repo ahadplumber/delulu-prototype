@@ -104,7 +104,7 @@ export default function ProjectDetailScreen({
       style={{ background: "#1A0A14" }}
     >
       {/* Header */}
-      <div className="pt-[54px] px-5 pb-4 flex items-center gap-3">
+      <div className="pt-[12px] md:pt-[54px] px-5 pb-4 flex items-center gap-3">
         <motion.button
           onClick={onBack}
           className="w-[36px] h-[36px] rounded-full flex items-center justify-center"
@@ -403,7 +403,7 @@ export default function ProjectDetailScreen({
 
       {/* Bottom CTA */}
       <div
-        className="absolute bottom-0 left-0 right-0 px-5 pb-[36px] pt-4"
+        className="absolute bottom-0 left-0 right-0 px-5 pb-[16px] md:pb-[36px] pt-4"
         style={{
           background: "linear-gradient(180deg, transparent, #1A0A14 40%)",
         }}

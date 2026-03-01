@@ -22,7 +22,7 @@ export default function AnalysisReadyScreen({
       <div className="absolute top-[30%] left-1/2 -translate-x-1/2 w-[350px] h-[350px] rounded-full bg-[#C4956A]/8 blur-[100px] animate-pulse-warm" />
 
       {/* Top spacer */}
-      <div className="h-[100px]" />
+      <div className="h-[16px] md:h-[100px]" />
 
       {/* Main content */}
       <div className="flex flex-col items-center z-10 px-8">
@@ -121,7 +121,7 @@ export default function AnalysisReadyScreen({
 
       {/* Bottom CTA */}
       <motion.div
-        className="w-full px-8 pb-[50px] z-10"
+        className="w-full px-8 pb-[24px] md:pb-[50px] z-10"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1, duration: 0.6 }}

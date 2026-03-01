@@ -54,7 +54,7 @@ export default function DashboardScreen({
       style={{ background: "#1A0A14" }}
     >
       {/* Header */}
-      <div className="pt-[64px] px-6 pb-4">
+      <div className="pt-[16px] md:pt-[64px] px-6 pb-4">
         <motion.div
           className="flex items-center justify-between"
           initial={{ opacity: 0, y: -10 }}
@@ -258,7 +258,7 @@ export default function DashboardScreen({
 
       {/* Bottom Nav */}
       <div
-        className="absolute bottom-0 left-0 right-0 pb-[30px] pt-3 px-8"
+        className="absolute bottom-0 left-0 right-0 pb-[12px] md:pb-[30px] pt-3 px-8"
         style={{
           background: "linear-gradient(180deg, transparent, #1A0A14 30%)",
         }}

@@ -27,7 +27,7 @@ export default function KeyboardPreviewScreen({
       style={{ background: "#1A0A14" }}
     >
       {/* Header */}
-      <div className="pt-[54px] px-5 pb-2 flex items-center justify-between">
+      <div className="pt-[12px] md:pt-[54px] px-5 pb-2 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <motion.button
             onClick={onBack}
@@ -537,7 +537,7 @@ export default function KeyboardPreviewScreen({
       </div>
 
       {/* Bottom safe area */}
-      <div className="h-[30px]" />
+      <div className="h-[8px] md:h-[30px]" />
     </div>
   );
 }

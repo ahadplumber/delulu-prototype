@@ -149,7 +149,7 @@ export default function KeyboardFeatureScreen({
       <div className="absolute bottom-[30%] left-1/2 -translate-x-1/2 w-[350px] h-[250px] bg-[#6B1D4A]/20 blur-[100px] rounded-full" />
 
       {/* Header */}
-      <div className="flex flex-col items-center pt-[72px] px-6 z-10 shrink-0">
+      <div className="flex flex-col items-center pt-[16px] md:pt-[72px] px-6 z-10 shrink-0">
         <motion.p
           className="text-[12px] tracking-[0.2em] uppercase text-[#C4956A]/60 mb-3"
           style={{ fontFamily: "var(--font-dm-sans)" }}
@@ -184,13 +184,13 @@ export default function KeyboardFeatureScreen({
 
       {/* Interactive demo */}
       <motion.div
-        className="flex-1 flex flex-col justify-end px-4 pb-[60px] z-10 min-h-0"
+        className="flex-1 flex flex-col px-4 pb-[16px] md:pb-[60px] z-10 min-h-0"
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
       >
         {/* Chat area — scrollable */}
-        <div className="rounded-t-2xl bg-[#0D0609] border border-[#FFF8F3]/5 border-b-0 flex flex-col overflow-hidden">
+        <div className="rounded-t-2xl bg-[#0D0609] border border-[#FFF8F3]/5 border-b-0 flex flex-col overflow-hidden flex-1 min-h-0">
           {/* Chat header */}
           <div className="flex items-center gap-2 px-4 pt-3 pb-2 shrink-0" style={{ borderBottom: "1px solid rgba(255,248,243,0.05)" }}>
             <div className="w-6 h-6 rounded-full bg-[#3D0C2B] flex items-center justify-center">
@@ -200,7 +200,7 @@ export default function KeyboardFeatureScreen({
           </div>
 
           {/* Scrollable messages */}
-          <div ref={chatScrollRef} className="flex-1 overflow-y-auto px-3 py-3 flex flex-col gap-2" style={{ maxHeight: "160px" }}>
+          <div ref={chatScrollRef} className="flex-1 overflow-y-auto px-3 py-3 flex flex-col gap-2 min-h-0">
             {chatHistory.map((msg, i) => (
               <div key={i} className={`flex ${msg.from === "you" ? "justify-end" : "justify-start"}`}>
                 <div
@@ -274,7 +274,7 @@ export default function KeyboardFeatureScreen({
             background: "linear-gradient(180deg, #1C0E17 0%, #150A11 100%)",
             border: "1px solid rgba(255,248,243,0.05)",
             borderTop: "none",
-            minHeight: "220px",
+            minHeight: "200px",
           }}
         >
           <AnimatePresence mode="wait">
